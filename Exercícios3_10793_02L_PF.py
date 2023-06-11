@@ -4,7 +4,7 @@ def adicionar_personagem(lista_personagens):
     nome = input('Insira o nome da personagem: ')
     idade = int(input('Insira a idade da personagem: '))
     profissão = input('Insira a profissão da personagem: ')
-    hobbies = input('Insira os hobbies da personagem: ')
+    hobbies = input('Insira os hobbies da personagem, dividos por vírgula: ').split(",")
     descrição = input('Insira uma breve descrição da personagem: ')
     personagem = {'nome': nome, 'idade': idade, 'profissão': profissão, 'hobbies': hobbies, 'descrição': descrição,}
     lista_personagens.append(personagem)
